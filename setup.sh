@@ -70,9 +70,7 @@ else
 fi
 NEED_INSTALL=""
 echo -n "Testing if python3 is present..."
-# install python first so that I don't have to suffer from bash
-if python3 -V > /dev/null; then
-    echo "yes"
+# install python first so that I don't have to suffer from bash if python3 -V > /dev/null; then echo "yes"
 else
     echo "no"
     NEED_INSTALL="$NEED_INSTALL python3"
