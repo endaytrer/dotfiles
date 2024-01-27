@@ -94,7 +94,7 @@ else
     NEED_INSTALL="$NEED_INSTALL git"
 fi
 
-if [ $NEED_INSTALL != "" ]; then
+if [ "$NEED_INSTALL" != "" ]; then
     echo "install missing dependencies..."
     sudo $PACKAGE_MANAGER $PM_INSTALL $NEED_INSTALL
 fi
