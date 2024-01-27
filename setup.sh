@@ -71,6 +71,8 @@ fi
 NEED_INSTALL=""
 echo -n "Testing if python3 is present..."
 # install python first so that I don't have to suffer from bash if python3 -V > /dev/null; then echo "yes"
+if python3 -V > /dev/null; then
+    echo "yes"
 else
     echo "no"
     NEED_INSTALL="$NEED_INSTALL python3"
@@ -96,3 +98,12 @@ if [ "$NEED_INSTALL" != "" ]; then
     echo "install missing dependencies..."
     sudo $PACKAGE_MANAGER $PM_INSTALL $NEED_INSTALL
 fi
+
+cd $HOME
+
+# no changing branch by default, make sure to merge branch to main
+if [ ! -d "$HOME/dotfiles" ]; then
+    git clone https://github.com/endaytrer/dotfiles.git "$HOME/dotfiles"
+fi
+
+python3 $HOME/dotfiles/scripts/main.py $DISTRO

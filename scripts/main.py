@@ -1,2 +1,7 @@
 #!/usr/bin/env python3
-print("Hello from python!")
+import sys
+import argparse
+
+distro = sys.argv[1]
+
+print(f"Hello, {distro} from python!")
