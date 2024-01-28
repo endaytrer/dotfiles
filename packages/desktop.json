@@ -177,7 +177,7 @@
     },
     {
         "canonical_name": "mako",
-        "alt_names": {},
+        "alt_names": {"apt": "mako-notifier"},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
         "mandatory": true,
