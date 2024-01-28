@@ -1,103 +1,124 @@
 [
-    // Display manager / compositor(gdm & hyprland)
     {
         "canonical_name": "gdm",
         "alt_names": {"apt": "gdm3"},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": ["gdm"]
     },
-    // assume that debian / ubuntu already have a display manager, so don't install it
+    
     {
         "canonical_name": "hyprland",
         "alt_names": {},
         "available": ["pacman", "dnf"],
         "from_source": null,
-        "mandatory": false
+        "mandatory": false,
+        "enable_services": []
     },
     {
         "canonical_name": "waybar",
         "alt_names": {},
         "available": ["pacman", "dnf"],
         "from_source": null,
-        "mandatory": false
+        "mandatory": false,
+        "enable_services": []
     },
     {
         "canonical_name": "kitty",
         "alt_names": {},
         "available": ["pacman", "dnf"],
         "from_source": null,
-        "mandatory": false
+        "mandatory": false,
+        "enable_services": []
     },
     {
         "canonical_name": "wofi",
         "alt_names": {},
         "available": ["pacman", "dnf"],
         "from_source": null,
-        "mandatory": false
+        "mandatory": false,
+        "enable_services": []
     },
     {
         "canonical_name": "wl-clipboard",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "wlogout",
         "alt_names": {},
         "available": ["yay", "dnf"],
         "from_source": null,
-        "mandatory": false
+        "mandatory": false,
+        "enable_services": []
     },
     {
         "canonical_name": "swaybg",
         "alt_names": {},
         "available": ["pacman", "dnf"],
         "from_source": null,
-        "mandatory": false
+        "mandatory": false,
+        "enable_services": []
     },
     {
         "canonical_name": "swayidle",
         "alt_names": {},
         "available": ["pacman", "dnf"],
         "from_source": null,
-        "mandatory": false
+        "mandatory": false,
+        "enable_services": []
     },
     {
         "canonical_name": "gdk-pixbuf2",
         "alt_names": {"apt": "libgdk-pixbuf2.0-dev", "dnf": "gdk-pixbuf2-devel"},
         "available": ["pacman", "dnf", "apt"],
         "from_source": null,
-        "mandatory": false
+        "mandatory": false,
+        "enable_services": []
     },
     {
         "canonical_name": "cairo",
         "alt_names": {"apt": "libcairo2-dev", "dnf": "cairo-devel"},
         "available": ["pacman", "dnf", "apt"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "wayland-protocols",
         "alt_names": {"dnf": "wayland-protocols-devel"},
         "available": ["pacman", "dnf", "apt"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "wayland-devel",
+        "alt_names": {"apt": "libwayland-dev", "pacman": "wayland"},
+        "available": ["pacman", "dnf", "apt"],
+        "from_source": null,
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "libxkbcommon",
         "alt_names": {"apt": "libxkbcommon-dev", "dnf": "libxkbcommon-devel"},
         "available": ["pacman", "dnf", "apt"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "scdoc",
         "alt_names": {},
         "available": ["pacman", "dnf", "apt"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "swaylock-effects",
@@ -111,111 +132,169 @@
                 ["sudo", "ninja", "-C", "build", "install"]
             ]
         },
-        "mandatory": false
+        "mandatory": false,
+        "enable_services": []
     },
     {
         "canonical_name": "nautilus",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "gnome-calendar",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "fcitx5",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "fcitx5-chinese-addons",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "pamixer",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "mako",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "playerctl",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "brightnessctl",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "nm-connection-editor",
         "alt_names": {"apt": "network-manager-gnome"},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "blueman",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "wireshark",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "virt-manager",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "vlc",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "obs-studio",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "texlive",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "oh-my-zsh",
+        "alt_names": {},
+        "available": [],
+        "from_source": {
+            "git_repo": null,
+            "install_commands": [
+                ["bash", "-c",
+                "if [ ! -d \"$HOME/.oh-my-zsh\" ]; then yes n | sh -c \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"; else echo \"already installed\"; fi"]
+            ]
+        },
+        "mandatory": true,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "zsh-autosuggestions",
+        "alt_names": {},
+        "available": [],
+        "from_source": {
+            "git_repo": null,
+            "install_commands": [
+                ["bash", "-c", 
+                "if [ ! -d \"$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions\" ]; then git clone https://github.com/zsh-users/zsh-autosuggestions \"$HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions\"; else echo \"already installed\"; fi"]
+            ]
+        },
+        "mandatory": true,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "zsh-syntax-highlighting",
+        "alt_names": {},
+        "available": [],
+        "from_source": {
+            "git_repo": null,
+            "install_commands": [
+                ["bash", "-c", 
+                "if [ ! -d \"$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting\" ]; then git clone https://github.com/zsh-users/zsh-syntax-highlighting \"$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting\"; else echo \"already installed\"; fi"]
+            ]
+        },
+        "mandatory": true,
+        "enable_services": []
     }
 ]

@@ -1,132 +1,147 @@
 [
-    // C/CXX build tools
     {
         "canonical_name": "gcc",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "g++",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "gdb",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "make",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "cmake",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "binutils",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "pkgconf",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "bison",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "gawk",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "meson",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "ninja-build",
         "alt_names": { "pacman": "ninja" },
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
-    // shell and shell utils
     {
         "canonical_name": "zsh",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
-        "from_source": null
+        "from_source": null,
+        "enable_services": []
     },
     {
         "canonical_name": "openssh-server",
         "alt_names": {"pacman": "openssh"},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": ["sshd"]
     },
     {
         "canonical_name": "openssl",
         "alt_names": {"pacman": "openssh"},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "neofetch",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "vim",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "neovim",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "tmux",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
-    // Java, Node.js system
     {
         "canonical_name": "openjdk-17-jdk",
         "alt_names": {
@@ -135,43 +150,47 @@
         },
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "nodejs",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "npm",
         "alt_names": {"dnf": "nodejs-npm"},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
-    // Network utils
-    // scientific browsing should be done manually
     {
         "canonical_name": "network-manager",
         "alt_names": {"pacman": "networkmanager", "dnf": "NetworkManager"},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": ["NetworkManager"]
     },
     {
         "canonical_name": "net-tools",
-        "alt_names": {"pacman": "networkmanager", "dnf": "NetworkManager"},
+        "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "nmap",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     }
 ]

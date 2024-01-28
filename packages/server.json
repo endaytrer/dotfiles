@@ -1,19 +1,19 @@
 [
-    // VM
     {
         "canonical_name": "qemu",
         "alt_names": {"apt": "qemu-system", "pacman": "qemu-full"},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": []
     },
     {
         "canonical_name": "libvirt",
         "alt_names": {"apt": "libvirt-dev"},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
-        "mandatory": true
+        "mandatory": true,
+        "enable_services": ["libvirtd"]
     }
-    // Docker has to be installed manually
 
 ]
