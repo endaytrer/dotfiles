@@ -13,5 +13,5 @@
 ## How to install
 
 ```
-curl https://raw.githubusercontent.com/endaytrer/dotfiles/main/setup.sh | bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/endaytrer/dotfiles/main/setup.sh)"
 ```
