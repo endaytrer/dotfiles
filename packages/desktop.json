@@ -129,7 +129,8 @@
             "install_commands": [
                 ["meson", "build"],
                 ["ninja", "-C", "build"],
-                ["sudo", "ninja", "-C", "build", "install"]
+                ["sudo", "ninja", "-C", "build", "install"],
+                ["sudo", "chmod", "a+s", "/usr/local/bin/swaylock"]
             ]
         },
         "mandatory": false,

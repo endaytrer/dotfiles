@@ -180,10 +180,14 @@ for subp in configs:
         
 os.chdir(config_dst_dir)
 for i in in_config:
-    exec_failstop("ln", "-sf", i[1], i[0])
+    if os.path.exists(i[0]):
+        exec_failstop("rm", i[0])
+    exec_failstop("ln", "-s", i[1], i[0])
 
 os.chdir(home)
 for i in in_home:
+    if os.path.exists(i[0]):
+        exec_failstop("rm", i[0])
     exec_failstop("ln", "-sf", i[1], i[0])
     
 
