@@ -1,0 +1,73 @@
+{
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{}",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+            "*": 2
+        }
+    },
+    "clock": {
+        "format": "{:%a %b %d %H:%M}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "on-click": "gnome-calendar"
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "{icon} {ipaddr}/{cidr}",
+        "format-ethernet": "󰈀   {ipaddr}/{cidr}",
+        "format-disconnected": "󰈂 ",
+        "format-icons": {
+            "wifi": ["󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "]
+        },
+        "on-click": "nm-connection-editor"
+    },
+    "custom/power": {
+        "format": " ",
+        "on-click": "wlogout",
+        "tooltip": false
+    },
+    "custom/screenshot": {
+        "format": "󰄀 ",
+        "on-click": "grimblast copy area",
+        "tooltip": false
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-full": "",
+        "format-charging": "󰂄  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-icons": [" ", " ", " ", " ", " "],
+        "refresh": 1
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon}󰂰 ",
+        "format-bluetooth-muted": "󰸈 󰂰 ",
+        "format-muted": "󰸈 ",
+        "format-icons": {
+            "headphone": " ",
+            "default": ["󰕿 ", "󰖀 ", "󰕾 "]
+        },
+        "on-click": "pavucontrol"
+    },
+    "bluetooth": {
+        "format-disabled": "󰂲",
+        "format-off": "",
+        "format-on": "󰂯",
+        "interval": 30,
+        "on-click": "blueman-manager"
+    }
+
+}
+

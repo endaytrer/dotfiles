@@ -5,8 +5,8 @@ echo '
     _            _      _                                                             _                               _     
  \_|_)          | |  o |/                /                o    |                     | |                             | |    
    |     __     | |    |     _  o _  _|_ _    __             __|   __    _  _  _|_   | |  _      _   _           _   | |  _ 
-  _|    /  |    |/   | |/ \_|/  /  |  | |/   /  |  |   |  | /  |  /  |  / |/ |  |    |/  |/    |/ \_|/  |   |  |/ \_ |/  |/ 
-\(/\___/\_/|_  /|__//|_ \_/ |__/   |_ |_|__  \_/|// \_/|_/|_\_/|_/\_/|_/  |  |_ |_  /|__/|__   |__/ |__/ \_/|_ |__/ /|__/|__
+  _|    /  |    |/  /| |/ \_|/  /  |  | |/   /  | /|   |  | /  |  /  |  / |/ |  |    |/  |/    |/ \_|/  |   |  |/ \__|/  |/ 
+\(/\___/\_/|_  /|__/ |_/\_/ |__/   |_ |_|__  \_/|/  \_/|_/|_\_/|_/\_/|_/  |  |_ |_  /|__/|__   |__/ |__/ \_/|_/|__/  |__/|__
                                                /|                                             /|              /|            
                                                \|                                             \|              \|            
 '
@@ -26,7 +26,7 @@ if [ "${DISTRO_NAME}" = 'Arch Linux' ]; then
     DISTRO="archlinux"
     PACKAGE_MANAGER="pacman"
     PM_UPDATE="-Syu --noconfirm"
-    PM_INSTALL="-S"
+    PM_INSTALL="-S --noconfirm"
 elif [ "${DISTRO_NAME}" = 'Debian GNU/Linux' ]; then
     DISTRO="debian"
     PACKAGE_MANAGER="apt"
@@ -93,6 +93,8 @@ else
     echo "no"
     NEED_INSTALL="$NEED_INSTALL git"
 fi
+echo "updating package manager..."
+sudo $PACKAGE_MANAGER $PM_UPDATE
 
 if [ "$NEED_INSTALL" != "" ]; then
     echo "install missing dependencies..."

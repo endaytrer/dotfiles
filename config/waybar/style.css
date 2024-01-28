@@ -1,0 +1,103 @@
+
+window#waybar {
+    font-family: "Noto Sans";
+    font-size: 11pt;
+    background: none;
+}
+
+#workspaces {
+    margin: 4px 8px 0;
+}
+
+#workspaces button, #window {
+    font-size: 0.8em;
+    font-weight: bold;
+    border: none;
+    padding: 0 3px;
+    border-radius: 0;
+}
+
+#workspaces button:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+#workspaces button:last-child{
+    border-radius: 0 20px 20px 0;
+    border-right: none;
+}
+
+#workspaces button {
+    background-color: rgba(172, 183, 195, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    transition: padding 200ms ease-out, color 200ms ease-out, background-color 200ms ease-out;
+}
+#window {
+    border-radius: 20px;
+    font-size: 1em;
+    margin: 4px 10px 0;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.22);
+}
+#workspaces button.active {
+    padding: 0 16px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #181818;
+}
+#clock {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.22);
+}
+
+#custom-power, #custom-screenshot {
+    font-size: 0.9em;
+    background-color: rgba(24, 24, 24, 0.4);
+    border: 2px solid rgba(212, 224, 240, 0.4);
+    border-radius: 20px;
+    padding: 1px 4px 1px 7px;
+    margin: 4px 2px 0;
+    transition: color 200ms ease-out, background-color 200ms ease-out;
+}
+#custom-power {
+    margin-right: 10px;
+}
+
+#custom-power.focused, #custom-screenshot.focused {
+    background-color: rgba(212, 224, 240, 0.4);
+    color: black;
+}
+#battery, #network, #pulseaudio, #bluetooth {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #181818;
+    border-radius: 20px;
+    padding: 0 9px;
+    margin: 4px 2px 0;
+    border: none;
+    transition: color 200ms ease-out, background-color 200ms ease-out;
+}
+
+#battery.full, #bluetooth.off {
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+#battery.charging {
+    background-color: rgb(44, 174, 74);
+    color: white;
+}
+
+#battery.warning {
+    background-color: rgb(214, 214, 74);
+    color: black;
+}
+
+#battery.critical {
+    background-color: rgb(214, 12, 36);
+    color: white;
+}
+
+#bluetooth.on {
+    background-color: rgb(43, 96, 235);
+    color: white;
+}

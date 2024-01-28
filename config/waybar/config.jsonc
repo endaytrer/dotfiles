@@ -1,0 +1,16 @@
+{
+    // Positioning
+    "layer": "top",
+    "margin-top": 4,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 0,
+
+    // Modules
+    "include": ["~/.config/waybar/modules.jsonc"],
+    "modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "bluetooth", "battery", "network", "custom/screenshot", "custom/power"]
+}
+

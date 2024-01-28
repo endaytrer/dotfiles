@@ -1,0 +1,177 @@
+[
+    // C/CXX build tools
+    {
+        "canonical_name": "gcc",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "g++",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "gdb",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "make",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "cmake",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "binutils",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "pkgconf",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "bison",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "gawk",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "meson",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "ninja-build",
+        "alt_names": { "pacman": "ninja" },
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    // shell and shell utils
+    {
+        "canonical_name": "zsh",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null
+    },
+    {
+        "canonical_name": "openssh-server",
+        "alt_names": {"pacman": "openssh"},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "openssl",
+        "alt_names": {"pacman": "openssh"},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "neofetch",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "vim",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "neovim",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "tmux",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    // Java, Node.js system
+    {
+        "canonical_name": "openjdk-17-jdk",
+        "alt_names": {
+            "dnf": "java-17-openjdk",
+            "pacman": "jdk17-openjdk"
+        },
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "nodejs",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "npm",
+        "alt_names": {"dnf": "nodejs-npm"},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    // Network utils
+    // scientific browsing should be done manually
+    {
+        "canonical_name": "network-manager",
+        "alt_names": {"pacman": "networkmanager", "dnf": "NetworkManager"},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "net-tools",
+        "alt_names": {"pacman": "networkmanager", "dnf": "NetworkManager"},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    },
+    {
+        "canonical_name": "nmap",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true
+    }
+]
