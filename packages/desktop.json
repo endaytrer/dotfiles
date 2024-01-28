@@ -1,5 +1,54 @@
 [
     {
+        "canonical_name": "noto-fonts",
+        "alt_names": {"apt": "fonts-noto-extra", "dnf": "google-noto-fonts-common"},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "noto-fonts-cjk",
+        "alt_names": {"apt": "fonts-noto-cjk-extra"},
+        "available": ["pacman", "apt"],
+        "from_source": null,
+        "mandatory": false,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "google-noto-sans-cjk-fonts",
+        "alt_names": {},
+        "available": ["dnf"],
+        "from_source": null,
+        "mandatory": false,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "google-noto-sans-cjk-fonts",
+        "alt_names": {},
+        "available": ["dnf"],
+        "from_source": null,
+        "mandatory": false,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "google-noto-serif-cjk-fonts",
+        "alt_names": {},
+        "available": ["dnf"],
+        "from_source": null,
+        "mandatory": false,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "unzip",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true,
+        "enable_services": []
+
+    },
+    {
         "canonical_name": "gdm",
         "alt_names": {"apt": "gdm3"},
         "available": ["pacman", "apt", "dnf"],

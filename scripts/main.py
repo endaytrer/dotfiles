@@ -200,7 +200,25 @@ default_shell = '/bin/zsh'
 print(f"\033[1mChanging default shell to {default_shell}\033[0m\n\033[31;1mYou need to input your password here:\033[0m")
 exec_failstop('chsh', '-s', default_shell)
 
-if (input("\n\033[32;1mDone! reboot now? (yN) \033[0m") == 'y'):
-    subprocess.run(['sudo', 'reboot'])
+# install fonts
+FONT_URLS = ["https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/Iosevka.zip", 
+             "https://github.com/be5invis/Iosevka/releases/download/v28.0.7/PkgTTC-Iosevka-28.0.7.zip"]
+
+fonts_folder = os.path.join(home, ".fonts")
+
+if not os.path.exists(fonts_folder):
+    os.mkdir(fonts_folder)
+    
+os.chdir(fonts_folder)
+for font_url in FONT_URLS:
+    zip = font_url.split('/')[-1]
+    if not os.path.exists(os.path.join(fonts_folder, zip)):
+        exec_failstop("curl", "-fL", font_url, "-o", zip)
+    exec_failstop("bash", "-c", f"yes A | unzip {zip}")
+
+
+
+if (input("\n\033[32;1mDone! reboot now? (yN) \033[0m").lower() == 'y'):
+    exec_failstop('sudo', 'reboot')
 
 exit(0)
