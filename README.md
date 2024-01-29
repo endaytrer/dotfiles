@@ -1,14 +1,17 @@
 # Daniel Gu Dotfiles
 
-> [!WARNING]
-> Under development, not working yet
-
 ## Supported Distros
-- [ ] Arch Linux
-- [ ] Debian GNU/Linux
-- [ ] Fedora Linux
-- [ ] Fedora Linux Asahi Remix
-- [ ] Ubuntu
+- [x] Arch Linux
+- [x] Debian GNU/Linux
+- [x] Fedora Linux
+- [x] Fedora Linux Asahi Remix
+- [ ] Ubuntu (not tested)
+
+## What to do next
+- [ ] Install from other APT / copr source
+- [ ] Auto ssh-keygen
+- [ ] Visual Studio Code
+- [ ] grimblast screenshot
 
 ## How to install
 
