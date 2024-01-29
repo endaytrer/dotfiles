@@ -29,6 +29,7 @@ window#waybar {
 #workspaces button {
     background-color: rgba(172, 183, 195, 0.4);
     border-right: 1px solid rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
     transition: padding 200ms ease-out, color 200ms ease-out, background-color 200ms ease-out;
 }
 #window {
@@ -56,6 +57,7 @@ window#waybar {
     border-radius: 20px;
     padding: 1px 4px 1px 7px;
     margin: 4px 2px 0;
+    color: rgba(255, 255, 255, 0.8);
     transition: color 200ms ease-out, background-color 200ms ease-out;
 }
 #custom-power {
