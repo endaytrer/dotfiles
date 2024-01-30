@@ -29,7 +29,7 @@ window#waybar {
     background-color: rgba(172, 183, 195, 0.4);
     border-right: 1px solid rgba(255, 255, 255, 0.5);
     color: rgba(255, 255, 255, 0.8);
-    padding: 0 9px;
+    padding: 0 4px;
     transition: padding 200ms ease-out, color 200ms ease-out, background-color 200ms ease-out;
 }
 #window {
