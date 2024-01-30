@@ -1,0 +1,20 @@
+# This is a default monitor configuration.
+#
+# You can use `hyprctl monitors` to get monitor profiles
+#   monitor=NAME,RESOLUTION@REFRESH_RATE,MULTI_MONITOR_POSITION,SCALING_FACTOR
+#
+# Example: 
+#   monitor=eDP-1,3024x1890@60,524x1440,2
+#   monitor=HDMI-A-1,3840x2160@60,0x0,1.5
+#
+# This will form a monitor profile like this:
+#
+# +------------------+
+# |                  |
+# |     HDMI-A-1     |
+# |      4K@60       |
+# +---+----------+---+
+#     |  eDP-1   |
+#     |  3K@60   |
+#     +----------+
+#

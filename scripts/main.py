@@ -188,9 +188,18 @@ os.chdir(home)
 for i in in_home:
     if os.path.exists(i[0]):
         exec_failstop("rm", i[0])
-    exec_failstop("ln", "-sf", i[1], i[0])
+    exec_failstop("ln", "-s", i[1], i[0])
     
+print(f"\033[1mCreating default configs\033[0m")
+hypr_monitor_conf = os.path.join(config_src_dir, 'hypr/monitor.conf')
+zsh_aliases_conf = os.path.join(home, ".aliases.zsh")
 
+if not os.path.exists(hypr_monitor_conf):
+    exec_failstop("cp", os.path.join(config_src_dir, "hypr/monitor.conf.default"), hypr_monitor_conf)
+
+if not os.path.exists(zsh_aliases_conf):
+    exec_failstop("cp", os.path.join(config_src_dir, ".aliases.zsh.default"), zsh_aliases_conf)
+    
 print(f"\033[1mEnabling services\033[0m")
 exec_failstop('sudo', 'systemctl', 'enable', *enable_services)
 

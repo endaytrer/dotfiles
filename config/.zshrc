@@ -99,6 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+source ~/.aliases.zsh
+
 # Fcitx5 input method
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
