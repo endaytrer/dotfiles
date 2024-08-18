@@ -192,5 +192,13 @@
         "from_source": null,
         "mandatory": true,
         "enable_services": []
+    },
+    {
+        "canonical_name": "jq",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true,
+        "enable_services": []
     }
 ]

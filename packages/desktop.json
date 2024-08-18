@@ -186,6 +186,32 @@
         "enable_services": []
     },
     {
+        "canonical_name": "Fluent-icon-theme",
+        "alt_names": {},
+        "available": [],
+        "from_source": {
+            "git_repo": "https://github.com/vinceliuice/Fluent-icon-theme.git",
+            "install_commands": [
+                ["./install.sh"]
+            ]
+        },
+        "mandatory": false,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "Fluent-gtk-theme",
+        "alt_names": {},
+        "available": [],
+        "from_source": {
+            "git_repo": "https://github.com/vinceliuice/Fluent-gtk-theme.git",
+            "install_commands": [
+                ["./install.sh"]
+            ]
+        },
+        "mandatory": false,
+        "enable_services": []
+    },
+    {
         "canonical_name": "nautilus",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
@@ -299,6 +325,30 @@
     },
     {
         "canonical_name": "texlive",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "gnome-extensions-app",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "gnome-tweaks",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true,
+        "enable_services": []
+    },
+    {
+        "canonical_name": "gnome-browser-connector",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
         "from_source": null,
