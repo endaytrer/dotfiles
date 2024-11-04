@@ -348,6 +348,14 @@
         "enable_services": []
     },
     {
+        "canonical_name": "gnome-open",
+        "alt_names": {},
+        "available": ["pacman", "apt", "dnf"],
+        "from_source": null,
+        "mandatory": true,
+        "enable_services": []
+    },
+    {
         "canonical_name": "gnome-browser-connector",
         "alt_names": {},
         "available": ["pacman", "apt", "dnf"],
